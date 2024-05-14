@@ -1,0 +1,78 @@
+.marvel
+.dc
+.english
+.telugu
+.tamil
+.hindi
+.post-left {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.marvel-left::after,
+.dc-left::after,
+.english-left::after,
+.telugu-left::after,
+.tamil-left::after,
+.hindi-left::after,
+.post-left::after,
+.marvel-left::before,
+.dc-left::before,
+.english-left::before,
+.telugu-left::before,
+.tamil-left::before,
+.hindi-left::before,
+.post-left::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    border-left: 2px solid;
+    top: 2px;
+    left: 0
+}
+.marvel-left::after,
+.dc-left::after,
+.english-left::after,
+.telugu-left::after,
+.tamil-left::after,
+.hindi-left::after,
+.post-left::after {
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    transform: rotate(45deg);
+    left: 6px;
+    top: 4px
+}
+
+.gg-chevron-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-right::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(-45deg);
+    right: 6px;
+    top: 4px
+}
